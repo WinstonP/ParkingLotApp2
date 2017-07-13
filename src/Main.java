@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -19,11 +21,24 @@ public class Main {
      * @param args the command line arguments
      * @author CSSP, Xavier University of Louisiana, 7/13/2017
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println("\nHello, XULA Parking Lot App!\n");
 
+
         // TODO #1:  Create file with 100 "vin  classification" pairs per line.
-        // TODO #2:  Read values from file and output # of upperclassmen.
+
+        Scanner sc = new Scanner(new File("vinclasification.txt"));
+        numOfUpperclassmen();
+    }
+
+    private static int numOfUpperclassmen() {
+        int upperClassmen = 0;
+
+        return upperClassmen;
+    }
+    // TODO #2:  Read values from file and output # of upperclassmen.
+
+
         // TODO #3:  Read values from the file and output largest vin.
         // TODO #4:  Read values from the file and sort the vins.
 
@@ -39,5 +54,10 @@ public class Main {
         // TODO #12: Did anyone have to park in an overflow lot?
         // TODO #13: How full is each lot?
         // TODO #14: Are there enough parking spaces for each classification?
-    }
+
+
+
+
+
 }
+
